@@ -1,0 +1,99 @@
+Tipos Primitivos
+
+Number
+Representa tanto inteiros quanto flutuantes (ponto flutuante dupla precisão, IEEE 754). Inclui valores especiais como NaN, Infinity e -Infinity 
+
+🚫 NaN (Not a Number)
+Representa um valor numérico indefinido ou irrepresentável, por exemplo:
+
+resultado de 0/0, Math.sqrt(-1), ou +"texto" 
+
+
+No padrão IEEE‑754 (usado por JavaScript), é um tipo especial de Number, embora não seja igual a nenhum valor, nem a si mesmo: NaN !== NaN 
+
+
+“NaN is the only JavaScript value that is not equal to itself.” 
+
+
+Operações envolvendo NaN resultam em NaN (é "tóxico"): NaN + 5 → NaN 
+
+
+Para detectá-lo, use Number.isNaN(x) (mais preciso) ou isNaN(x) (coerção automática) 
+
+
+∞ Infinity / -Infinity
+Representa valores além do limite numérico suportado por Number.
+
+Infinity: maior que qualquer número finito.
+
+-Infinity: menor que qualquer número finito 
+
+
+Exemplos:
+1 / 0            // → Infinity  
+1 / -0           // → -Infinity  
+let x = Number.MAX_VALUE * 2; // → Infinity
+Ainda é do tipo Number: typeof Infinity === "number" 
+
+
+isFinite() retorna false para Infinity, -Infinity e NaN 
+
+
+⚙️ Interações e peculiaridades
+Qualquer comparação ou operação matemática com NaN sempre resulta em NaN, inclusive NaN === NaN é false 
+
+
+“Anything involving NaN returns NaN… NaN !== NaN” 
+
+
+Quando NaN encontra Infinity, o NaN domina, e o resultado é sempre NaN 
+
+
+As operações com infinito seguem a lógica matemática estendida:
+
+Infinity + qualquer número finito → Infinity
+
+Infinity * 0 → NaN (indeterminação matemática) .
+
+
+BigInt
+Lida com inteiros de precisão arbitrária, maiores que o limite seguro do Number (±2⁵³–1). Criado adicionando n ao final (ex: 123n) 
+
+
+String
+Sequência de caracteres imutável, pode usar aspas simples, duplas ou template literals com backticks, que permitem interpolação (${}) .
+
+Boolean
+Valores lógicos true ou false. Essencial em controles de fluxo e condições 
+
+
+Undefined
+Indica ausência de valor: quando uma variável é declarada mas não inicializada, ou acesso a propriedade inexistente 
+
+
+Null
+Valor “nulo” intencional, usado para sinalizar “nenhum valor” ou “objeto inexistente” .
+
+Symbol
+Símbolo único e imutável usado como identificador para propriedades de objeto, evitando colisões de nomes 
+
+
+Por que “primitivo”?
+
+São imutáveis: qualquer operação retorna um novo valor, sem alterar o original 
+
+
+Não são objetos, mas o JS faz auto‑boxing para permitir acesso a métodos (ex: "foo".toUpperCase() funciona por criar temporariamente um objeto String) 
+
+
+🧠 Tipos de Variáveis (modos de declaração)
+JavaScript não associa um tipo fixo à variável; o tipo é da valor atribuído. Mas a forma como declaramos as variáveis afeta seu comportamento:
+
+var
+Declarado/edição global ou função, sofre hoisting (içamento), escopo ambíguo.
+
+let
+Escopo de bloco, sem hoisting problemático, mais previsível.
+
+const
+Como let, mas gera erro se tentarmos reatribuir; o valor em si pode ser mutável (em objetos/arrays).
