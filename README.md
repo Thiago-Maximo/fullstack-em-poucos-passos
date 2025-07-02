@@ -6,6 +6,7 @@ Este repositório contém todos os projetos, anotações e exercícios desenvolv
 
 Um mergulho direto ao ponto no mundo do desenvolvimento web!  
 Da base com HTML, CSS e JavaScript até back-end com Node.js, Express e banco de dados, este curso é uma jornada essencial para quem quer construir aplicações web completas com eficiência e clareza.
+Também estou fazendo Uso do Curso do Gustavo Guanabara Sobre JavaScript.
 
 ## 🧠 O que você vai encontrar aqui
 
