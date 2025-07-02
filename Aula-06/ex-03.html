@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(155, 43, 155);
+            color: white;
+            font: normal 20px Arial;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+    <h1>Exercicio 03</h1> 
+    <script>
+        var nome = window.prompt("Digite Seu Nome: ");
+        window.alert(`Olá ${nome} !,Seu nome tem ${nome.length} Letras.`); //Exibe a resposta, não escreve no documento
+
+        window.alert(`Olá ${nome} !, Seu Nome em Maiusculas fica ${nome.toUpperCase()}`); //Exibe a resposta e deixa tudo em Maiusculo
+
+        window.alert(`Olá ${nome} !, Seu Nome em Minuscula fica ${nome.toLocaleLowerCase()} `); //Exibe a resposta e deixa tudo em Minuscula
+
+        document.write(`Olá <strong>${nome}</strong> !, Seu Nome tem ${nome.length} letras. <br>`); //Escreve no Documento a resposta
+        
+        document.write(`Olá <strong>${nome}</strong> !, Seu Nome em Maiusculas fica ${nome.toUpperCase()} <br>`); //deixa tudo em Maiusculo
+        
+        document.write(`Olá <strong>${nome}</strong> !, Seu Nome em Minusculas fica ${nome.toLocaleLowerCase()} <br>`); //deixa tudo em Minuscula
+
+        // ################ Formatando String ############################
+        
+        //No document.write() ele aceita as tag html por isso tem o strong que deixa em negrito e o br que quebra para linha debaixo e não deixa tudo ficar junto.
+        
+        // variavel.length - me diz quantos caracteres tem a string
+        // variavel.toUpperCase() - Coloca tudo da String em Maiusculas
+        // variavel.toLowerCase() - Coloca tudo da String em Minuscula
+    </script>
+</body>
+</html>

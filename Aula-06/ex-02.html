@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(155, 43, 155);
+            color: white;
+            font: normal 20px Arial;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+    <h1>Exercicio 02</h1> 
+    <script>
+        var n1 = window.prompt("Digite um numero: ");
+        var n2 = window.prompt("Digite Outro Numero: ");
+        var s = Number(n1) + Number(n2);
+        window.alert("A soma é, " + s);
+      // ################ Converter de String Para Number ############################
+
+      //Number.ParseInt() Converte para numero inteiro
+      //Number.ParseFloat() Converte para numero flutuante
+
+      //Tudo que estiver dentro de aspas é do tipo string, então temos que converter antes de realizar o calculo.
+
+      //Podemos converter direto utilizando esse método: var n1 = Number.ParseInt(window.prompt("Digite um numero: "));
+
+      // Assim o valor atribuido a variavel n1 sera do tipo int e não do tipo string
+      //Se for digitado letras no lugar de numeros ira aparecer o valor e NaN, Not a Number (Não é um numero).
+
+
+      //Ou Podemos Converter desse jeito: var s = Number.parseFloat(n1) + Number.parseFloat(n2);
+      //tem a opção de Converter assim tvm: var s = Number(n1) + Number(n2);
+
+
+      // ################ Converter de Number Para String ############################
+
+      // Para Converter de Number para String podemos Fazer das seguintes formas:
+      //1° String(n) que ira converter o valor daquela variavel para String
+      //2° n1.toString().
+
+      // ################ Exibir Informações na Tela Com valor de Uma Variavel ############################
+      
+      // Temos 2 opções:
+      //1°- window.alert(`A soma é, ${s}`); forma mais facil e agil de exibir
+      //2°- window.alert("A soma é, " + s); funciona, pórem para exibir o valor de uma variavle junto com texto fica mais demorado e chato de se fazer
+
+      // ################ Formatando String ############################
+      // var variavel = 'Java Script'
+
+      // variavel.length - me diz quantos caracteres tem a string
+      // variavel.toUpperCase() - Coloca tudo da String em Maiusculas
+      // variavel.toLowerCase() - Coloca tudo da String em Minuscula
+    </script>
+</body>
+</html>

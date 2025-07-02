@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-04</title>
+</head>
+<body>
+     <style>
+        body{
+            background-color: rgb(155, 43, 155);
+            color: white;
+            font: normal 20px Arial;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+    <h1>Formatando Number</h1>
+
+
+    <script>
+        var n1 = 1550.50;
+
+        document.writeln(`A variavel ${n1} Formatada para o Padrão de Moeda Brasileiro fica: ${n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})} <br>`);
+        document.writeln(`A variavel ${n1} Formatada para o Padrão de Moeda Dolar Americano fica: ${n1.toLocaleString('en-US',{style: 'currency', currency: 'USD'})} <br>`);
+        document.writeln(`A variavel ${n1} Formatada para o Padrão de Moeda Italiana fica: ${n1.toLocaleString('it-IT',{style: 'currency', currency: 'EUR'})} <br>`);
+
+
+
+        // ################ Formatando Number para Moedas ############################
+        //O comando: document.writeln(`A variavel ${n1} Formatada para o Padrão de Moeda Brasileiro fica: ${n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}`);
+        // Formata a variavel para exibir no formatado da moeda Brasileira.
+    </script>
+</body>
+</html>
