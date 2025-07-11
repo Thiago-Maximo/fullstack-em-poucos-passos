@@ -20,7 +20,8 @@
 //#####################
 
 //Por Seletor:
-//
+// var caixa = document.querySelector('div#caixa');
+// caixa.style.background = '';
 
 //#####################
 

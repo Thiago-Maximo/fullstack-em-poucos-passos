@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        body{
+            display: flex;
+            gap: 10px;
+        }
+        #area{
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        #metodo2{
+            background-color: rgb(99, 7, 219);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!---- 1° método, onde "Colocamos" o JS no Html" -->
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()"> intereja...</div>
+
+<!--- 2° Método----->
+    <div id="metodo2"> Interaja...</div>
+<script src="js/ex-01.js"></script>
+</body>
+</html>
