@@ -1,0 +1,41 @@
+ body{
+            background-color: rgb(92, 92, 221);
+        }
+        header{
+           text-align: center;
+           color: white;
+        }
+        footer{
+            text-align: center;
+            color: white;
+            font-style: italic;
+        }
+        section{
+            background-color: white;
+            border-radius: 10px;
+            width: 500px;
+            margin: 0 auto;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.527);
+            text-align: center;
+            padding: 10px;
+        }
+        #Titulo{
+            margin: 0 auto;
+        }
+        #tag{
+            margin: 10px auto;
+        }
+        #divhora{
+            background-color: blueviolet;
+            width: 230px;
+            height: 230px;
+            border-radius: 700px;
+            margin: 0 auto;
+            background-image: url('../img/Foto Manhã - Atividade 1.png'); 
+            background-size: cover; 
+            background-position: center;
+        }
+        #txthora{
+            font-size: larger;
+            font-style: italic;
+        }
