@@ -63,13 +63,13 @@ function clicou() {
     // Determina o nome do arquivo da imagem
     var genero = sexoSelecionado == "Masculino" ? "homem" : "mulher";
     if (faixa === "bebe") {
-        genero = sexoSelecionado == "Masculino" ? "homem" : "mulher"; // conforme seus nomes de arquivo
+        genero = sexoSelecionado == "Masculino" ? "homem" : "mulher"; 
     }
     if (faixa === "Adulto") {
-        genero = sexoSelecionado == "Masculino" ? "homem" : "mulher"; // conforme seus nomes de arquivo
+        genero = sexoSelecionado == "Masculino" ? "homem" : "mulher"; 
     }
     if (faixa === "crianca") {
-        genero = sexoSelecionado == "Masculino" ? "homem" : "mulher"; // conforme seus nomes de arquivo
+        genero = sexoSelecionado == "Masculino" ? "homem" : "mulher"; 
     }
     if (faixa === "idoso") {
         genero = sexoSelecionado == "Masculino" ? "homem" : "mulher";
